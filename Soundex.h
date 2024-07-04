@@ -12,7 +12,7 @@ void Characters(char character, char *soundex, char *prevCode);
 int AppendCode(char code, char prevCode);
 void SoundexCode(char *soundex);
 char GetSoundexCode(char character);
-
+char *GenerateSoundex(const char *name);
 
 char *GenerateSoundex(const char *name) {
     
