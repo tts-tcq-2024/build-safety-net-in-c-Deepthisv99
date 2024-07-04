@@ -27,7 +27,7 @@ TEST(SoundexTests, GenerateSoundex_SingleCharacter_ReturnsPaddedCode) {
  
 TEST(SoundexTests, GenerateSoundex_ValidName_ReturnsCorrectSoundex) {
 
-    char input[] = "Jack";
+    char input[] = "Code";
 
     char result[5] = {0};
  
@@ -39,7 +39,7 @@ TEST(SoundexTests, GenerateSoundex_ValidName_ReturnsCorrectSoundex) {
  
 TEST(SoundexTests, GenerateSoundex_LongString_ReturnsTruncatedCode) {
 
-    char input[] = "JackandJill";
+    char input[] = "Codeandbugs";
 
     char result[5] = {0};
  
@@ -51,7 +51,7 @@ TEST(SoundexTests, GenerateSoundex_LongString_ReturnsTruncatedCode) {
  
 TEST(SoundexTests, GenerateSoundex_NumbersInString_ReturnsCorrectSoundex) {
 
-    char input[] = "Jack123";
+    char input[] = "Bug123";
 
     char result[5] = {0};
  
@@ -63,7 +63,7 @@ TEST(SoundexTests, GenerateSoundex_NumbersInString_ReturnsCorrectSoundex) {
  
 TEST(SoundexTests, InitializeTheSoundex_ValidName_ReturnsInitializedSoundex) {
 
-    char input[] = "John";
+    char input[] = "Codility";
 
     char result[2] = {0};
  
@@ -155,9 +155,9 @@ TEST(SoundexTests, GetSoundexCode_UnknownCharacter_ReturnsZero) {
  
 TEST(SoundexTests, GenerateSoundex_CaseInsensitivity_ReturnsSameCode) {
 
-    char inputLowercase[] = "jack";
+    char inputLowercase[] = "code";
 
-    char inputUppercase[] = "JACK";
+    char inputUppercase[] = "CODE";
 
     char resultLowercase[5] = {0};
 
